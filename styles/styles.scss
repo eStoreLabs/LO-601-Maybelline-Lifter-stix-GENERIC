@@ -22,8 +22,8 @@ $px-XXL: 40px;
 
 $color-main: #000000;
 $color-bg: #ffffff;
-$color-accent: #f6a255;
-$color-accent-2: #69a7dd;
+$color-accent: #f5c7ba;
+$color-accent-2: #b5d8f1;
 
 $media-breakpoint-sm: 576px;
 $media-breakpoint-md: 768px;
@@ -43,7 +43,7 @@ $media-breakpoint-xl: 1200px;
 
   ::selection {
     background-color: $color-accent-2;
-    color: #fff;
+    color: #000000;
   }
 
   // minimal css reset
@@ -145,6 +145,11 @@ $media-breakpoint-xl: 1200px;
         transform: rotate(180deg);
       }
     }
+  }
+
+  .es-video {
+    padding: 0 $px-L $px-L $px-L;
+    background-color: $color-accent;
   }
 
   .es-cross {

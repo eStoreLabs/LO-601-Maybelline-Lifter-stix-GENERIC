@@ -10,12 +10,12 @@
   container: es-rc-content/inline-size;
 }
 #es-rc #es-rc-content ::-moz-selection {
-  background-color: #69a7dd;
-  color: #fff;
+  background-color: #b5d8f1;
+  color: #000000;
 }
 #es-rc #es-rc-content ::selection {
-  background-color: #69a7dd;
-  color: #fff;
+  background-color: #b5d8f1;
+  color: #000000;
 }
 #es-rc #es-rc-content * {
   box-sizing: border-box;
@@ -63,14 +63,14 @@
   margin-block: 16px;
 }
 #es-rc #es-rc-content .es-section__button {
-  background-color: #f6a255;
+  background-color: #f5c7ba;
   padding: 8px 16px;
   cursor: pointer;
   margin: auto;
 }
 @media (min-width: 768px) {
   #es-rc #es-rc-content .es-section__button {
-    background-color: #69a7dd;
+    background-color: #b5d8f1;
   }
 }
 #es-rc #es-rc-content .es-slider .swiper-button-prev:after,
@@ -101,6 +101,10 @@
 }
 #es-rc #es-rc-content .es-slider__buttons--prev__img {
   transform: rotate(180deg);
+}
+#es-rc #es-rc-content .es-video {
+  padding: 0 24px 24px 24px;
+  background-color: #f5c7ba;
 }
 #es-rc #es-rc-content .es-cross {
   padding: 60px 16px;
