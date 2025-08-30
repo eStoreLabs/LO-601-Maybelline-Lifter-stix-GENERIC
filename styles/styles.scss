@@ -247,6 +247,14 @@ $media-breakpoint-xl: 1200px;
     }
   }
 
+  .es-footer {
+    background-color: $color-main;
+    &__logo {
+      max-width: 200px;
+      padding: $px-M;
+    }
+  }
+
   // accessibility improvement for animations
   @media (prefers-reduced-motion: reduce) {
     * {

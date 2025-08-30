@@ -188,6 +188,13 @@
     height: 7em;
   }
 }
+#es-rc #es-rc-content .es-footer {
+  background-color: #000000;
+}
+#es-rc #es-rc-content .es-footer__logo {
+  max-width: 200px;
+  padding: 16px;
+}
 @media (prefers-reduced-motion: reduce) {
   #es-rc #es-rc-content * {
     animation-duration: 0.01ms !important;
