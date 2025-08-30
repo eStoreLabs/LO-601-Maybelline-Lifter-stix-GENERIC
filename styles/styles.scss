@@ -18,7 +18,7 @@ $px-S: 8px;
 $px-M: 16px;
 $px-L: 24px;
 $px-XL: 32px;
-$px-XXL: 40px;
+$px-XXL: 48px;
 
 $color-main: #000000;
 $color-bg: #ffffff;
@@ -97,17 +97,6 @@ $media-breakpoint-xl: 1200px;
 
   .es-section {
     margin-block: $px-M;
-
-    &__button {
-      background-color: $color-accent;
-      padding: $px-S $px-M;
-      cursor: pointer;
-      margin: auto;
-
-      @media (min-width: $media-breakpoint-md) {
-        background-color: $color-accent-2;
-      }
-    }
   }
 
   // other sections
@@ -143,6 +132,94 @@ $media-breakpoint-xl: 1200px;
       }
       &--prev__img {
         transform: rotate(180deg);
+      }
+    }
+  }
+
+  .es-colors {
+    .es-section-title {
+      color: $color-accent;
+    }
+    background-color: $color-accent;
+    padding: $px-L $px-L 0 $px-L;
+
+    &__container {
+      background-color: $color-bg;
+      padding: $px-M;
+      padding-bottom: $px-XXL;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+    }
+
+    &__flex-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: $px-L $px-M;
+      row-gap: $px-XXL;
+      flex-wrap: wrap;
+    }
+    &__item {
+      position: relative;
+      max-width: 200px;
+      &__desc {
+        position: absolute;
+        bottom: -9%;
+        left: 0;
+        width: 100%;
+      }
+      &__desc__wrapper {
+        position: relative;
+      }
+      &__number {
+        font-family: $text-secondary;
+        font-size: 32px;
+        font-weight: $fw-bold;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+        color: $color-bg;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 12%;
+      }
+    }
+    @container es-rc-content (min-width: 712px) {
+      display: flex;
+      flex-direction: row-reverse;
+      padding: $px-L;
+      position: relative;
+      &__item {
+        max-width: 150px;
+        width: 23%;
+      }
+      &__container {
+        width: 77%;
+        margin-left: auto;
+      }
+      &__flex-container {
+        z-index: 4;
+        position: relative;
+        justify-content: flex-end;
+        gap: $px-S;
+      }
+      &__photo {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        max-height: 100%;
+        width: auto;
+        z-index: 3;
+      }
+    }
+    @container es-rc-content (min-width: 980px) {
+      &__container {
+        padding-bottom: 70px;
+      }
+      &__item {
+        max-width: 155px;
       }
     }
   }
