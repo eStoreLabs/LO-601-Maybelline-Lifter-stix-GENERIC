@@ -4,8 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template RC</title>
-    <!-- TODO: link google fonts here -->
+    <title>Maybelline Lifter Stix</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;700&family=Barlow:wght@300;500;700&family=Montserrat:wght@300;500;700&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="./styles/swiper-bundle.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
@@ -18,10 +23,7 @@
                 <img class="es-kv__img--mobile" src="./images/example-mobile.png" alt="placeholder mobile">
                 <img class="es-kv__img--desktop" src="./images/example-dekstop.png" alt="placeholder desktop">
             </div>
-            <div class="es-section">
-                <p class="es-section-title">Section title</p>
-                <button class="es-section__button">Click</button>
-            </div>
+
             <div class="es-slider es-section">
                 <p class="es-section-title">Slider</p>
                 <!-- Slider main container -->
@@ -50,9 +52,65 @@
                     <div class="es-swiper-scrollbar"></div>
                 </div>
             </div>
+
+            <div class="es-cross">
+                <div class="es-cross__header">
+                    <p class="es-section-title">Inne produkty, <span class="es-section-title--bold">które mogą ci się
+                            spodobać</span></p>
+                </div>
+
+                <div class="es-cross__container">
+                    <div class="es-cross__single">
+                        <a href="#" target="_blank">
+                            <div class="es-cross__packshot">
+                                <img src="./images/grippy.png" alt="" class="es-cross__img" />
+                            </div>
+                        </a>
+                        <p class="es-cross__name">Grippy serum</p>
+                        <p class="es-cross__desc">
+                            Baza utrwalająca makijaż aż&nbsp;do&nbsp;24&nbsp;godzin (test konsumencki, 116 kobiet).
+                            Nawilża skórę,
+                            nadając jej świeży, promienny i&nbsp;pełen blasku wygląd.
+                        </p>
+                        <a href="#" class="es-cross__link">Kup teraz</a>
+                    </div>
+                    <div class="es-cross__single">
+                        <a href="#" target="_blank">
+                            <div class="es-cross__packshot">
+                                <img src="./images/super-stay.png" alt="" class="es-cross__img" />
+                            </div>
+                        </a>
+                        <p class="es-cross__name">Super stay lumi matte</p>
+                        <p class="es-cross__desc">
+                            Lekki, długotrwały podkład, który zapewni Ci nieskazitelne krycie
+                            aż&nbsp;do&nbsp;30&nbsp;godzin! (test
+                            konsumencki, 120&nbsp;osób). Odkryj efekt satynowego matu i&nbsp;zapomnij o&nbsp;efekcie
+                            maski.
+                        </p>
+                        <a href="#" class="es-cross__link">Kup teraz</a>
+                    </div>
+                    <div class="es-cross__single">
+                        <a href="#" target="_blank">
+                            <div class="es-cross__packshot">
+                                <img src="./images/instant-eraser.png" alt="" class="es-cross__img" />
+                            </div>
+                        </a>
+                        <p class="es-cross__name">Instant eraser</p>
+                        <p class="es-cross__desc">
+                            Multifunkcyjny korektor z&nbsp;aplikatorem w&nbsp;formie gąbeczki doskonale konturuje,
+                            koryguje i&nbsp;kryje niedoskonałości, zmniejsza widoczność cieni pod oczami oraz nawilża
+                            skórę aż&nbsp;do&nbsp;12&nbsp;godzin (test instrumentalny).
+                        </p>
+
+                        <a href="#" class="es-cross__link">Kup teraz</a>
+
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </div>
-    <script src="./scripts/click.js"></script>
     <script src="./scripts/swiper-bundle.min.js"></script>
     <script src="./scripts/swiperInit.js"></script>
 </body>
