@@ -45,18 +45,77 @@
     font-size: 48px;
   }
 }
-#es-rc #es-rc-content .es-kv {
-  background-color: #ffffff;
+#es-rc #es-rc-content .es-kv__text {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  text-wrap: balance;
+  margin-block: 24px;
+  line-height: 1;
 }
-#es-rc #es-rc-content .es-kv__img--desktop {
+#es-rc #es-rc-content .es-kv__text__title {
+  font-size: 40px;
+  font-weight: 700;
+}
+#es-rc #es-rc-content .es-kv__text__subtitle {
+  font-size: 24px;
+  font-weight: 500;
+}
+#es-rc #es-rc-content .es-kv__bg--mobile {
+  display: block;
+}
+#es-rc #es-rc-content .es-kv__bg--desktop {
   display: none;
 }
-@media (min-width: 768px) {
-  #es-rc #es-rc-content .es-kv__img--mobile {
+@container es-rc-content (min-width: 500px) {
+  #es-rc #es-rc-content .es-kv {
+    position: relative;
+  }
+  #es-rc #es-rc-content .es-kv__text {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    bottom: 4%;
+    max-width: 60%;
+    margin: unset;
+    color: #ffffff;
+    text-shadow: 0 4px 28px rgba(0, 0, 0, 0.6);
+  }
+  #es-rc #es-rc-content .es-kv__bg--mobile {
     display: none;
   }
-  #es-rc #es-rc-content .es-kv__img--desktop {
+  #es-rc #es-rc-content .es-kv__bg--desktop {
     display: block;
+  }
+  #es-rc #es-rc-content .es-kv__packshot {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    padding: 24px;
+  }
+}
+@container es-rc-content (min-width: 576px) {
+  #es-rc #es-rc-content .es-kv__text {
+    left: 11%;
+  }
+  #es-rc #es-rc-content .es-kv__text__title {
+    font-size: 52px;
+  }
+  #es-rc #es-rc-content .es-kv__text__subtitle {
+    font-size: 30px;
+  }
+}
+@container es-rc-content (min-width: 768px) {
+  #es-rc #es-rc-content .es-kv__text__title {
+    font-size: 66px;
+  }
+  #es-rc #es-rc-content .es-kv__text__subtitle {
+    font-size: 38px;
   }
 }
 @container es-rc-content (min-width: 768px) {
@@ -72,6 +131,7 @@
     max-width: min-content;
     transform: translate(0, -50%);
     text-shadow: 0 4px 16px rgba(0, 0, 0, 0.32);
+    line-height: 1;
   }
 }
 #es-rc #es-rc-content .es-slider .swiper-button-prev:after,
@@ -134,6 +194,7 @@
   text-align: center;
   text-wrap: balance;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+  line-height: 1;
 }
 #es-rc #es-rc-content .es-slider .es-slide__desc--title {
   margin-bottom: 8px;
