@@ -59,9 +59,6 @@
     display: block;
   }
 }
-#es-rc #es-rc-content .es-section {
-  margin-block: 16px;
-}
 #es-rc #es-rc-content .es-slider .swiper-button-prev:after,
 #es-rc #es-rc-content .es-slider .swiper-rtl .swiper-button-next:after,
 #es-rc #es-rc-content .es-slider .swiper-button-next:after,
@@ -81,15 +78,76 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 0;
 }
 #es-rc #es-rc-content .es-slider__buttons--prev__img, #es-rc #es-rc-content .es-slider__buttons--next__img {
   display: block;
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   margin: 0;
 }
 #es-rc #es-rc-content .es-slider__buttons--prev__img {
   transform: rotate(180deg);
+}
+#es-rc #es-rc-content .es-slider .es-swiper-pagination {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#es-rc #es-rc-content .es-slider .es-swiper-pagination .swiper-pagination-bullet-active {
+  background: #ffffff;
+}
+#es-rc #es-rc-content .es-slider__pagination {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#es-rc #es-rc-content .es-slider .es-slide {
+  padding: 24px;
+}
+#es-rc #es-rc-content .es-slider .es-slide__container {
+  position: relative;
+  background-color: #f5c7ba;
+  padding: 0 0 16px 16px;
+}
+#es-rc #es-rc-content .es-slider .es-slide__desc {
+  color: #ffffff;
+  text-align: center;
+  text-wrap: balance;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+}
+#es-rc #es-rc-content .es-slider .es-slide__desc--title {
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+#es-rc #es-rc-content .es-slider .es-slide__desc--subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+}
+@container es-rc-content (min-width: 600px) {
+  #es-rc #es-rc-content .es-slider .es-slide__container {
+    position: relative;
+    padding: 0;
+  }
+  #es-rc #es-rc-content .es-slider .es-slide__desc {
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    width: 60%;
+    padding-left: 32px;
+  }
+}
+@container es-rc-content (min-width: 768px) {
+  #es-rc #es-rc-content .es-slider .es-slide__desc--subtitle {
+    font-size: 31.5px;
+  }
 }
 #es-rc #es-rc-content .es-colors {
   background-color: #f5c7ba;

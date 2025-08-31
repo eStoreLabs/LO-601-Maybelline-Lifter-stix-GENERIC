@@ -24,19 +24,45 @@
                 <img class="es-kv__img--desktop" src="./images/example-dekstop.png" alt="placeholder desktop">
             </div>
 
-            <div class="es-slider es-section">
-                <p class="es-section-title">Slider</p>
+            <div class="es-slider" style="background: url(./images/bg.jpg) center / cover no-repeat;">
                 <!-- Slider main container -->
                 <div class="swiper es-swiper">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper es-swiper-wrapper">
                         <!-- Slides -->
-                        <div class="swiper-slide es-slide">Slide 1</div>
-                        <div class="swiper-slide es-slide">Slide 2</div>
-                        <div class="swiper-slide es-slide">Slide 3</div>
+                        <div class="swiper-slide es-slide">
+                            <div class="es-slide__container">
+                                <img src="./images/slide-1.jpg" alt="" class="es-slide__img" />
+                                <div class="es-slide__desc">
+                                    <p class="es-slide__desc--title es-section-title es-section-title--bold">
+                                        Przeciągnij,<br> rozblenduj i gotowe -</p>
+                                    <p class="es-slide__desc--subtitle">Perfekcyjnie wykonturowana<br> twarz!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide es-slide">
+                            <div class="es-slide__container">
+                                <img src="./images/slide-2.jpg" alt="" class="es-slide__img" />
+                                <div class="es-slide__desc">
+                                    <p class="es-slide__desc--title es-section-title es-section-title--bold">
+                                        Przeciągnij,<br> rozblenduj i gotowe -</p>
+                                    <p class="es-slide__desc--subtitle">Perfekcyjnie wykonturowana<br> twarz!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide es-slide">
+                            <div class="es-slide__container">
+                                <img src="./images/slide-3.jpg" alt="" class="es-slide__img" />
+                                <div class="es-slide__desc">
+                                    <p class="es-slide__desc--title es-section-title es-section-title--bold">
+                                        Przeciągnij,<br> rozblenduj i gotowe -</p>
+                                    <p class="es-slide__desc--subtitle">Perfekcyjnie wykonturowana<br> twarz!</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- If we need navigation buttons -->
+                    <!-- navigation buttons -->
                     <div class="es-slider__buttons">
                         <div class="swiper-button-prev es-swiper-button-prev">
                             <img class="es-slider__buttons--prev__img" src="./images/btn-next.png"
@@ -45,11 +71,12 @@
                         <div class="swiper-button-next es-swiper-button-next">
                             <img class="es-slider__buttons--next__img" src="./images/btn-next.png"
                                 alt="Przewiń do następnego slajdu">
+
                         </div>
                     </div>
 
-                    <!-- If we need scrollbar -->
-                    <div class="es-swiper-scrollbar"></div>
+                    <!-- pagination bullets -->
+                    <div class="es-swiper-pagination"></div>
                 </div>
             </div>
 

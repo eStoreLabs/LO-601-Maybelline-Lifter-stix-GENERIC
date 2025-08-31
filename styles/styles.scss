@@ -95,15 +95,10 @@ $media-breakpoint-xl: 1200px;
     }
   }
 
-  .es-section {
-    margin-block: $px-M;
-  }
-
   // other sections
 
-  // Swiper styles, reset some of the inherent ones
-
   .es-slider {
+    // Swiper styles reset start
     .swiper-button-prev:after,
     .swiper-rtl .swiper-button-next:after,
     .swiper-button-next:after,
@@ -123,15 +118,83 @@ $media-breakpoint-xl: 1200px;
       display: flex;
       width: 100%;
       justify-content: space-between;
+      position: absolute;
+      top: 50%;
+      left: 0;
       &--prev__img,
       &--next__img {
         display: block;
-        width: 32px;
-        height: 32px;
+        width: 24px;
+        height: 24px;
         margin: 0;
       }
       &--prev__img {
         transform: rotate(180deg);
+      }
+    }
+    .es-swiper-pagination {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .swiper-pagination-bullet-active {
+        background: $color-bg;
+      }
+    }
+    &__pagination {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    // swiper styles reset end
+
+    .es-slide {
+      padding: $px-L;
+      &__container {
+        position: relative;
+        background-color: $color-accent;
+        padding: 0 0 $px-M $px-M;
+      }
+      &__desc {
+        color: $color-bg;
+        text-align: center;
+        text-wrap: balance;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+        &--title {
+          margin-bottom: $px-S;
+          font-weight: $fw-bold;
+        }
+        &--subtitle {
+          font-size: 20px;
+          font-weight: $fw-semibold;
+          font-family: $text-secondary;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    @container es-rc-content (min-width: 600px) {
+      .es-slide {
+        &__container {
+          position: relative;
+          padding: 0;
+        }
+        &__desc {
+          position: absolute;
+          left: 0%;
+          top: 50%;
+          transform: translate(0%, -50%);
+          width: 60%;
+          padding-left: 32px;
+        }
+      }
+    }
+    @container es-rc-content (min-width: 768px) {
+      .es-slide {
+        &__desc--subtitle {
+          font-size: 31.5px;
+        }
       }
     }
   }
