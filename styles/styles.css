@@ -59,6 +59,21 @@
     display: block;
   }
 }
+@container es-rc-content (min-width: 768px) {
+  #es-rc #es-rc-content .es-headline {
+    position: relative;
+  }
+  #es-rc #es-rc-content .es-headline__title {
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    right: 6%;
+    max-width: -moz-min-content;
+    max-width: min-content;
+    transform: translate(0, -50%);
+    text-shadow: 0 4px 16px rgba(0, 0, 0, 0.32);
+  }
+}
 #es-rc #es-rc-content .es-slider .swiper-button-prev:after,
 #es-rc #es-rc-content .es-slider .swiper-rtl .swiper-button-next:after,
 #es-rc #es-rc-content .es-slider .swiper-button-next:after,
