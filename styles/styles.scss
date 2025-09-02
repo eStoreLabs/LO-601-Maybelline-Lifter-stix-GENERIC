@@ -231,6 +231,8 @@ $media-breakpoint-xl: 1200px;
         position: relative;
         background-color: $color-accent;
         padding: 0 0 $px-M $px-M;
+        position: relative;
+        padding: 0;
       }
       &__desc {
         color: $color-bg;
@@ -238,12 +240,19 @@ $media-breakpoint-xl: 1200px;
         text-wrap: balance;
         text-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
         line-height: 1;
+        position: absolute;
+        left: 0%;
+        top: 50%;
+        transform: translate(0%, -50%);
+        width: 60%;
+        padding: 24px;
         &--title {
-          margin-bottom: $px-S;
+          margin: 0;
           font-weight: $fw-bold;
+          font-size: 20px;
         }
         &--subtitle {
-          font-size: 20px;
+          font-size: 14px;
           font-weight: $fw-semibold;
           font-family: $text-secondary;
           text-transform: uppercase;
@@ -251,26 +260,39 @@ $media-breakpoint-xl: 1200px;
       }
     }
 
+    @container es-rc-content (min-width: 440px) {
+      .es-slide {
+        &__desc {
+          &--title {
+            font-size: 26px;
+          }
+          &--subtitle {
+            font-size: 17px;
+          }
+        }
+      }
+    }
     @container es-rc-content (min-width: 600px) {
       .es-slide {
-        &__container {
-          position: relative;
-          padding: 0;
-        }
         &__desc {
-          position: absolute;
-          left: 0%;
-          top: 50%;
-          transform: translate(0%, -50%);
-          width: 60%;
-          padding-left: 32px;
+          &--title {
+            font-size: 32px;
+          }
+          &--subtitle {
+            font-size: 21px;
+          }
         }
       }
     }
     @container es-rc-content (min-width: 768px) {
       .es-slide {
-        &__desc--subtitle {
-          font-size: 31.5px;
+        &__desc {
+          &--title {
+            font-size: 48px;
+          }
+          &--subtitle {
+            font-size: 31.5px;
+          }
         }
       }
     }
