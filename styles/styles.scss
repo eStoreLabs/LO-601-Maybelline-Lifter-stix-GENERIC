@@ -367,6 +367,11 @@ $media-breakpoint-xl: 1200px;
   .es-video {
     padding: 0 $px-L $px-L $px-L;
     background-color: $color-accent;
+    &__video {
+      aspect-ratio: 16 / 9;
+      width: 100%;
+      height: auto;
+    }
   }
 
   .es-cross {

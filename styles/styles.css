@@ -316,6 +316,11 @@
   padding: 0 24px 24px 24px;
   background-color: #f5c7ba;
 }
+#es-rc #es-rc-content .es-video__video {
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: auto;
+}
 #es-rc #es-rc-content .es-cross {
   padding: 60px 16px;
 }
